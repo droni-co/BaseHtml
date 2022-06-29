@@ -9,10 +9,18 @@ $(function() {
   $(".miboton").click(function(){
     alert("Hola");
   });
-});
-var activeNavItem = $('.nav-item');
 
-activeNavItem.click(function(){
-  activeNavItem.removeClass('active');
-  $(this).addClass('active');  
+  var activeNavItem = $('.nav-item');
+
+  activeNavItem.click(function(){
+    activeNavItem.removeClass('active');
+    $(this).addClass('active');  
+  });
+
+  $("#trFormuGrande").click(function() {
+    $(".formuGrande").show('slow')
+    $("#trFormuGrande").hide('slow')
+  })
+  
+
 });

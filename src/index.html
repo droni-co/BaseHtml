@@ -8,9 +8,7 @@
   <title>Document</title>
 </head>
 <body>
-  <!--<img src="./assets/kalvin.jpg">
-  <h1>hola mundo</h1>
-  <button class="miboton">Mi boton</button>-->
+
   <nav class="navbar navbar-expand-sm navbar-light bg-white" aria-label="Third navbar example">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="./assets/logo.png"></a>
@@ -51,19 +49,22 @@
   <section class="box-contacto py-5">
     <div class="row">
       <div class="col-sm-6">
-        <h1 class="text-dark"><span>¿Necesitas capital</span> para tu negocio o emprendimiento?</h1>
-        <div class="rounded p-3 px-4 mn-gradient-grey my-3">
-          <h3 class="text-primary"><span>¡Solicítalo ya!</span> Obtén tu crédito en menos de <span class="text-dark">24 Hrs</span></h3>
+        <h1 class="text-dark mobile-text-center"><span>¿Necesitas capital</span> para tu negocio o emprendimiento?</h1>
+        <div class="block-mobil d-md-none my-4">
+          <h3 class="text-primary mobile-text-center"><span>¡Solicítalo ya! tu</span></h3>
+        </div>
+        <div class="rounded p-3 px-4 mn-gradient-grey mt-4">
+          <h3 class="text-primary mobile-text-center"><span>¡Solicítalo ya!</span> Obtén tu crédito en menos de <span class="text-dark">24 Hrs</span></h3>
           <form class="formContac">
-            <div class="mb-3">
+            <div class="mb-2">
               <label for="" class="form-label">¿Cuánto te prestamos?</label>
-              <input type="number" class="form-control border-0 rounded-2 mb-2 currency" id="rangenumber" min="0" max="1000000" value="100000" oninput="range.value=value">
+              <input type="number" class="form-control border-0 rounded-2  currency" id="rangenumber" min="0" max="1000000" value="100000" oninput="range.value=value">
               <input type="range" class="w-100" value="100000" min="0" max="1000000" id="range" oninput="rangenumber.value=value"/>
             </div>
 
-            <div class="mb-3">
+            <div class="mb-2">
               <label for="" class="form-label">¿Cuándo puedes pagarlo?</label>
-              <input type="text" class="form-control border-0 rounded-2 mb-2" id="rangedate" min="0" max="100" value="10" oninput="date.value=value">
+              <input type="text" class="form-control border-0 rounded-2 " id="rangedate" min="0" max="100" value="10" oninput="date.value=value">
               <input type="range" class="w-100" value="100000" min="0" max="1000000" id="date" oninput="rangedate.value=value"/>
             </div>
 
@@ -75,60 +76,510 @@
                 <option >Independiente</option>
               </select>
             </div>
-            <div class="mb-3">
+            <div>
+              <div class="row textContac my-2">
+                <div class="col-6 mb-1" >
+                  <p class="m-0 p-1">Valor de préstamo</p>
+                </div>
+                <div class="col-6 mb-1">
+                  <p class="text-end fw-bold m-0 p-1">$0</p>
+                </div>
+                <hr class="hramarillo ">
+                <div class="col-6 mt-1">
+                  <p class="m-0 p-1">Total a desembolsar</p>
+                </div>
+                <div class="col-6 mt-1">
+                  <p class="text-end fw-bold m-0 p-1">$0</p>
+                </div>
+              </div>
+            </div>
+            <div class="my-3 text-center">
               <button class="btn btn-primary" type="button" id="trFormuGrande">Solicita tu credito</button>
             </div>
           </form>
         </div>
       </div>
-      <div class="col-sm-6 order-sm-last order-first">
+      <div class="col-sm-6 order-sm-last order-first p-1">
         <img src="./assets/foto-principal 1.png" class="w-100">
       </div>
     </div>
-  </section>
+     <!-- Formulario Grande Responsive-->
+  <div class="formuGrande rounded px-5 py-4 mn-gradient-grey" style="display: none;">
+    <div class="accordion mb-4" id="accordionInfoPersonal">
+        <h2 class="accordion-header" id="headingPersonal">
+          <button class="mnbtnCotac accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonal" aria-expanded="true" aria-controls="collapsePersonal">
+            Información personal
+          </button>
+        </h2>
+        <div id="collapsePersonal" class="accordion-collapse collapse " aria-labelledby="headingPersonal" data-bs-parent="#accordionInfoPersonal">
+         <form class="my-3 mx-1 formContac">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="mb-3">
+                <label for="" class="form-label">Primer nombre</label>
+                <input type="text" class="form-control border-0 rounded-2 " >
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="mb-3">
+                <label for="" class="form-label">Segundo nombre</label>
+                <input type="text" class="form-control border-0 rounded-2 " >
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="mb-3">
+                <label for="" class="form-label">Primer apellido*</label>
+                <input type="text" class="form-control border-0 rounded-2 " >
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="mb-3">
+                <label for="" class="form-label">Número de celular</label>
+                <input type="number" class="form-control border-0 rounded-2 " >
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="mb-3">
+                <label for="" class="form-label">Correo eletrónico</label>
+                <input type="email" class="form-control border-0 rounded-2 " >
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="mb-3">
+                <label for="" class="form-label">Fecha de nacimiento</label>
+                <input type="date" class="form-control border-0 rounded-2 " >
+              </div>
+            </div>
+          </div>
+         </form>
+        </div>
+    </div>
+    <hr class="hramarillo">
+    <div class="accordion mt-4 mb-4" id="accordionInfoLaboral">
+      <h2 class="accordion-header" id="headingLaboral">
+        <button class="mnbtnCotac accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLaboral" aria-expanded="true" aria-controls="collapseLaboral">
+          Información laboral
+        </button>
+      </h2>
+      <div id="collapseLaboral" class="accordion-collapse collapse" aria-labelledby="headingLaboral" data-bs-parent="#accordionInfoLaboral">
+       <form class="my-3 mx-1 formContac">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Actividad económica</label>
+              <input type="text" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Nombre de la empresa</label>
+              <input type="text" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Teléfono de la empresa</label>
+              <input type="text" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Dirección de la empresa</label>
+              <input type="number" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Cargo</label>
+              <input type="email" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Tipo de contrato</label>
+              <input type="" class="form-control border-0 rounded-2 datepicker">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Fecha de vinculación laboral</label>
+              <input type="date" class="form-control border-0 rounded-2 datepicker">
+            </div>
+          </div>
+        </div>
+       </form>
+      </div>
+  </div>
+    <hr class="hramarillo">
+    <div class="accordion mt-4 mb-4" id="accordionInfoFinanciera">
+      <h2 class="accordion-header" id="headingFinanciera">
+        <button class="mnbtnCotac accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFinanciera" aria-expanded="true" aria-controls="collapseFinanciera">
+          Información financiera
+        </button>
+      </h2>
+      <div id="collapseFinanciera" class="accordion-collapse collapse " aria-labelledby="headingFinanciera" data-bs-parent="#accordionInfoFinanciera">
+       <form class="my-3 mx-1 formContac">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Ingresos mensuales</label>
+              <input type="text" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Egresos mensuales</label>
+              <input type="text" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Experiencia crediticia</label>
+              <input type="text" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Forma de desembolso</label>
+              <input type="number" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+        </div>
+       </form>
+      </div>
+  </div>
+  <hr class="hramarillo">
+    <div class="accordion mt-4 mb-4" id="accordionInfoReferencias">
+      <h2 class="accordion-header" id="headingReferencias">
+        <button class="mnbtnCotac accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReferencias" aria-expanded="true" aria-controls="collapseReferencias">
+          Referencias
+        </button>
+      </h2>
+      <div id="collapseReferencias" class="accordion-collapse collapse" aria-labelledby="headingReferencias" data-bs-parent="#accordionInfoReferencias">
+       <form class="my-3 mx-1 formContac">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Nombres y apellidos</label>
+              <input type="text" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Parentesco</label>
+              <input type="text" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Departamento de residencia</label>
+              <input type="text" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Municipio de residencia</label>
+              <input type="number" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Número de teléfono</label>
+              <input type="number" class="form-control border-0 rounded-2 " >
+            </div>
+          </div>
+        </div>
+       </form>
+      </div>
+  </div>
+  <div class="text-center text-acepp">
+    <div class="form-check">
+      <input class="" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="">
+        He leído y autorizo el <a href="#"> tratamiento de mis datos personales.</a>
+      </label>
+    </div>
+    <div class="form-check">
+      <input  type="checkbox" value="" id="" >
+      <p class="form-check-label" style="display:inline;" for="">
+        Acepto los <a href="#">términos y condiciones</a> de mundo negocios.
+      </p>
+    </div>
+  </div>
+  <div class="my-3 text-center">
+    <button class="btn btn-primary" type="button" >Solicita tu credito</button>
+  </div>
+  </div>
   <!-- Formulario Grande Responsive-->
-  <section class="formuGrande" style="display: none;">
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse dont-collapse-sm show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
+  </section>
+  <section class="creditos">
+    <div class="rounded p-5 bg-primary text-white">
+      <div class="row justify-content-md-center pt-5">
+        <div class="col-sm-4">
+          <h2 class="d-none d-sm-block mx-auto text-left"><span style="display:block; padding-right: 50%;">Consulta el estado</span>
+            de tu crédito</h2>
+            <h2 class="d-md-none text-center"><span>Consulta</span>
+              de tu crédito</h2>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Accordion Item #2
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse dont-collapse-sm" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <div class="col-sm-5">
+          <div class="mb-3">
+            <label for="" class="form-label">Numero de cédula</label>
+            <input type="text" class="form-control border-0 rounded-2" >
           </div>
+          <div class="text-end">
+          <button class="btn btn-secondary fw-bold px-4" type="button">Consultar</button>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Accordion Item #3
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse dont-collapse-sm" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Formulario Grande Responsive-->
+</div><!--fin container-->
+<section>
+  <div class="mn-gradient-grey py-5 my-5">
+    <div class="container">
+    <h2 class="text-primary text-center">Beneficios de <span>Mundo Negocios</span></h2>
+    <br>
+    <div class="row mt-5 mb-2">
+      <div class="col-sm-3 ">
+        <div class="d-block w-75 text-center mx-auto">
+          <img src="./assets/icon-peso.svg" class="img-fluid w-75">
+          <p class="text-center p-1 my-3">Amortización cuota fija con capital e intereses.</p>
+        </div>
+      </div>
+      <div class="col-sm-3 ">
+        <div class="d-block w-75 text-center mx-auto">
+          <img src="./assets/icon-bank.svg" class="img-fluid w-75">
+          <p class="text-center p-1 my-3">Las condiciones del tiempo y tasa del crédito fijas de principio a fin.</p>
+        </div>
+      </div>
+      <div class="col-sm-3 ">
+        <div class="d-block w-75 text-center mx-auto">
+          <img src="./assets/icon-key.svg" class="img-fluid w-75">
+          <p class="text-center p-1 my-3">Seguro de vida deudor que cubre la obligación en caso de incapacidad total o permanente.</p>
+        </div>
+      </div>
+      <div class="col-sm-3 ">
+        <div class="d-block w-75 text-center mx-auto">
+          <img src="./assets/icon-peso.svg" class="img-fluid w-75">
+          <p class="text-center p-1 my-3">Amortización cuota fija con capital e intereses.</p>
+        </div>
+      </div>
+    </div>
+  </div><!--fin container-->
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="ratio ratio-16x9 rounded">
+          <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" class="rounded" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-sm-6 text-end align-self-center">
+        <h2 class="text-primary text-end">¡Crecemos <span>junto a ti!</span></h2>
+        <p class="text-end w-75 ps-5 my-3" style="float:right">
+          Mundo Negocios SAS es una sociedad simplificada por acciones, fundamentada en la prestación de servicios financieros, con el objeto de brindar a nuestros clientes la oportunidad de crecimiento con nuestros servicios, buscando siempre responsabilidad social, bienestar, ideas y calidad en nuestras operaciones.
+        </p>
+      </div>
+    </div>
+  </div><!--fin container-->
+</section>
+<section>
+  <div class="bg-primary p-5 my-5">
+    <div class="container">
+    <h2 class="text-white text-center"> ¿Necesitas un <span>crédito?</span></h2>
+    <div class="row mt-5">
+      <div class="col-sm-4">
+        <div class="text-center">
+          <img src="./assets/libre-inversion-1.png" class="img-fluid w-75">
+          <div class="bg-white text-center rounded p-4">
+            <h3 class="text-primary"><span>Libre inversión</span></h3>
+            <p class="p-1 px-4 lh-lg">Monto mínimo aprobado de $500.000 y máximo de acuerdo a la capacidad de endeudamiento.</p>
+
+            <p class="p-1 px-4 lh-lg"> Plazo mínimo 6 meses y máximo 36 meses.</p>
+              
+            <p class="p-1 px-4 lh-lg">Es un crédito de libre destinación, exclusivo para esas necesidades soñadas, con financiación a corto y mediano plazo.</p>
+              
+            <p class="p-1 px-4 lh-lg">Manejamos cuotas fijas durante toda la vigencia del préstamo, incluyendo capital e intereses.</p>
+              
+            <p class="p-1 px-4 lh-lg">Aseguramos tu crédito en caso de calamidad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="text-center">
+          <img src="./assets/libre-inversion-2.png" class="img-fluid w-75">
+          <div class="bg-white text-center rounded p-4">
+            <h3 class="text-primary"><span>Libre inversión</span></h3>
+            <p class="p-1 px-4 lh-lg">Monto mínimo aprobado de $500.000 y máximo de acuerdo a la capacidad de endeudamiento.</p>
+
+            <p class="p-1 px-4 lh-lg"> Plazo mínimo 6 meses y máximo 36 meses.</p>
+              
+            <p class="p-1 px-4 lh-lg">Es un crédito de libre destinación, exclusivo para esas necesidades soñadas, con financiación a corto y mediano plazo.</p>
+              
+            <p class="p-1 px-4 lh-lg">Manejamos cuotas fijas durante toda la vigencia del préstamo, incluyendo capital e intereses.</p>
+              
+            <p class="p-1 px-4 lh-lg">Aseguramos tu crédito en caso de calamidad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="text-center">
+          <img src="./assets/libre-inversion-3.png" class="img-fluid w-75">
+          <div class="bg-white text-center rounded p-4">
+            <h3 class="text-primary"><span>Libre inversión</span></h3>
+            <p class="p-1 px-4 lh-lg">Monto mínimo aprobado de $500.000 y máximo de acuerdo a la capacidad de endeudamiento.</p>
+
+            <p class="p-1 px-4 lh-lg"> Plazo mínimo 6 meses y máximo 36 meses.</p>
+              
+            <p class="p-1 px-4 lh-lg">Es un crédito de libre destinación, exclusivo para esas necesidades soñadas, con financiación a corto y mediano plazo.</p>
+              
+            <p class="p-1 px-4 lh-lg">Manejamos cuotas fijas durante toda la vigencia del préstamo, incluyendo capital e intereses.</p>
+              
+            <p class="p-1 px-4 lh-lg">Aseguramos tu crédito en caso de calamidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <button class="btn btn-secondary fw-bold px-4" type="button">Solicita tu crédito</button>
+    </div>
+  </div><!--fin container-->
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2 class="text-primary text-center">Preguntas <span>Frecuentes</span></h2>
+    <div class="my-5">
+      <div class="accordion acorPlus" id="myAccordion">
+          <div class="">
+              <h2 class="accordion-header" id="headingpf1">
+                  <button type="button" class="accordion-button btn-mn-accord collapsed" data-bs-toggle="collapse" data-bs-target="#collapsepf1">
+                    <span>¿Cuáles son los requisitos mínimos para tramitar un crédito?</span>
+                  </button>									
+              </h2>
+              <div id="collapsepf1" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                  <div class="card-body">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                  </div>
+              </div>
+          </div>
+          <div class="">
+              <h2 class="accordion-header" id="headingpf2">
+                  <button type="button" class="accordion-button btn-mn-accord" data-bs-toggle="collapse" data-bs-target="#collapsepf2">
+                    <span>¿Cuáles son los requisitos mínimos para tramitar un crédito?</span>
+                  </button>
+              </h2>
+              <div id="collapsepf2" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+              </div>
+              </div>
+          </div>
+          <div class="">
+              <h2 class="accordion-header" id="headingpf3">
+                  <button type="button" class="accordion-button btn-mn-accord collapsed" data-bs-toggle="collapse" data-bs-target="#collapsepf3">
+                    <span>¿La cuota de mi crédito es fija o es variable?</span>
+                  </button>                     
+              </h2>
+              <div id="collapsepf3" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                  <div class="card-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                  </div>
+              </div>
+          </div>
+          <div class="">
+            <h2 class="accordion-header" id="headingpf4">
+                <button type="button" class="accordion-button btn-mn-accord collapsed" data-bs-toggle="collapse" data-bs-target="#collapsepf4">
+                  <span>¿Cuantos días debe tener la carta laboral para tramitar un crédito?</span>
+                </button>                     
+            </h2>
+            <div id="collapsepf4" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+          <h2 class="accordion-header" id="headingpf5">
+              <button type="button" class="accordion-button btn-mn-accord collapsed" data-bs-toggle="collapse" data-bs-target="#collapsepf5">
+                <span>Si puede realizar hipoteca sobre bien inmueble, para adquirir un crédito.</span>
+              </button>                     
+          </h2>
+          <div id="collapsepf5" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+              <div class="card-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>
+  </div>
+</section>
+<section>
+  <div class="mn-gradient-grey py-5 mt-5">
+  <div class="row m-0">
+    <div class="col-sm-6 p-0">
+      <img src="./assets/contac2.jpg" class="img-fluid rounded-end" style="margin-top:-70px;">
+    </div>
+  <div class="col-sm-6">
+    <h2 class="text-primary text-center my-5">¡Haz parte de <span>Mundo Negocios!</span></h2>
+    <form class="formContac">
+      <div class="row justify-content-md-center">
+        <div class="col-10">
+          <div class="mb-3 text-center">
+            <label for="" class="form-label ">Recibe información de tu interés o contáctanos </label>
+            <input type="text" class="form-control border-0 rounded w-75 mx-auto" placeholder="Déjanos tu email">
+          </div>
+          <div class="px-5 text-center">
+          <hr class="hramarillo">
+        </div>
+        </div>
+      </div>
+  </form>
+  </div>
+  </div>
 </div>
+<div class="container">
+  <div class="bg-white text-center rounded py-5 box-topMn">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-3 text-center">
+        <h3 class="text-primary">Visítanos</h3>
+        <img src="./assets/icon-bank.svg" class="img-fluid icon-foot">
+        <p class="my-3 w-50 mx-auto">Calle 25 #20 89 Barrio El Cauca</p>
+        <h3 class="text-primary my-4 w-75 text-center mx-auto">¿Tienes alguna pregunta?</h3>
+        <img src="./assets/icon-phone.svg" class="img-fluid icon-foot">
+        <p class="my-3 w-50 mx-auto">Calle 25 #20 89 Barrio El Cauca</p>
+      </div>
+      <div class="col-sm-4 text-start">
+        <h3 class="text-primary w-50">Horarios</h3>
+        <img src="./assets/icon-user.svg" class="img-fluid icon-foot">
+        <p class="my-4 w-50 fw-bold">Punto Físico</p>
+
+        <p class="my-3 w-50"></p>Lunes a Sábado<br>
+          08:00 a.m – 12:00 p.m  &  02:00 p.m – 04:30 p.m</p>
+          
+          <p class="my-4 w-50 fw-bold">Punto Virtual</p>
+          
+          <p class="my-3 w-50">08:00 a.m - 08:00 p.m<br>
+          Para respuesta inmediata
+          *No aplica días hábiles</p>
+      </div>
+      <div class="col-sm-3 text-center">
+        <h3 class="text-primary">Visítanos</h3>
+        <img src="./assets/icon-hand.svg" class="img-fluid icon-foot">
+        <p class="my-4 w-50 mx-auto">gerencia
+          <a href="mailto:@mundonegocios.com.co">@mundonegocios.com.co</a></p>
+        <h3 class="text-primary my-4 w-75 text-center mx-auto">Encuéntranos
+          en</h3>
+        <img src="./assets/face.svg" class="img-fluid icon-foot">
+        <img src="./assets/inst.svg" class="img-fluid icon-foot">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
   <script src="./bundle.js"></script>
 </body>
 </html>

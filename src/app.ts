@@ -1,6 +1,7 @@
 import * as _ from 'lodash';
 // import bootstrap
 import 'bootstrap';
+import 'bootstrap-datepicker'
 
 var $ = require( "jquery" );
 
@@ -22,5 +23,6 @@ $(function() {
     $("#trFormuGrande").hide('slow')
   })
   
+  $('.datepicker').datepicker();
 
 });

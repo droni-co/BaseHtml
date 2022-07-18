@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'icomn';
+  src:  url('fonts/icomn.eot?yol5du');
+  src:  url('fonts/icomn.eot?yol5du#iefix') format('embedded-opentype'),
+    url('fonts/icomn.ttf?yol5du') format('truetype'),
+    url('fonts/icomn.woff?yol5du') format('woff'),
+    url('fonts/icomn.svg?yol5du#icomn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icomn-"], [class*=" icomn-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomn' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomn-arrow-down:before {
+  content: "\e900";
+}
+.icomn-arrow-left:before {
+  content: "\e901";
+}
+.icomn-arrow-right:before {
+  content: "\e902";
+}
+.icomn-arrow-up:before {
+  content: "\e903";
+}
+.icomn-bank:before {
+  content: "\e904";
+}
+.icomn-bank2:before {
+  content: "\e905";
+}
+.icomn-binder:before {
+  content: "\e906";
+}
+.icomn-calendar:before {
+  content: "\e907";
+}
+.icomn-check:before {
+  content: "\e908";
+}
+.icomn-clock:before {
+  content: "\e909";
+}
+.icomn-close:before {
+  content: "\e90a";
+}
+.icomn-credit:before {
+  content: "\e90b";
+}
+.icomn-credit-card:before {
+  content: "\e90c";
+}
+.icomn-delete:before {
+  content: "\e90d";
+}
+.icomn-face:before {
+  content: "\e90e";
+}
+.icomn-file:before {
+  content: "\e90f";
+}
+.icomn-folder:before {
+  content: "\e910";
+}
+.icomn-hands:before {
+  content: "\e911";
+}
+.icomn-home:before {
+  content: "\e912";
+}
+.icomn-insta:before {
+  content: "\e913";
+}
+.icomn-key:before {
+  content: "\e914";
+}
+.icomn-lock:before {
+  content: "\e915";
+}
+.icomn-money:before {
+  content: "\e916";
+}
+.icomn-nice:before {
+  content: "\e917";
+}
+.icomn-pdf:before {
+  content: "\e918";
+}
+.icomn-phone:before {
+  content: "\e919";
+}
+.icomn-plus:before {
+  content: "\e91a";
+}
+.icomn-plus-home:before {
+  content: "\e91b";
+}
+.icomn-poligon:before {
+  content: "\e91c";
+}
+.icomn-search:before {
+  content: "\e91d";
+}
+.icomn-trash-2:before {
+  content: "\e91e";
+}
+.icomn-user:before {
+  content: "\e91f";
+}
+.icomn-users:before {
+  content: "\e920";
+}
+.icomn-view:before {
+  content: "\e921";
+}
+.icomn-view-not:before {
+  content: "\e922";
+}

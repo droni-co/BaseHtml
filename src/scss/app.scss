@@ -118,6 +118,10 @@ hr.hramarillo {
 .mn-bRadius-5{
   border-radius: 35px;
 }
+.mn-bRadius-1-end{
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+}
 /* botones */
 .btn{
   letter-spacing: 0.3px !important;
@@ -133,6 +137,7 @@ form.fMn input[type=text],
 form.fMn input[type=date],
 form.fMn input[type=email],
 form.fMn input[type=number],
+form.fMn input[type=password],
 form.fMn textarea{
   border-radius: 7px !important;
   font-size: 11px;
@@ -645,7 +650,6 @@ input[type=search]{
 .btnRechazado{
   background-color: #FF0016;
 }
-
 @media (max-width: 720px) {
   .container{
     width: 89%;
@@ -680,6 +684,10 @@ input[type=search]{
   .mnEspace-2{
     display: block;
     padding: 15px;
+  }
+  .mnEspace-3{
+    display: block;
+    padding: 25px;
   }
   .pGet{
     display: none;
@@ -813,6 +821,10 @@ input[type=search]{
     width: 70%;
     margin: 10px auto 30px;
   }
+  .navmobil .menu{
+    width: 100%;
+    border:1px solid red;
+}
 
 }
 @media (min-width: 721px) and (max-width: 960px) {

@@ -10,34 +10,40 @@
 </head>
 <body class="bg-white">
   <div class="container-fluid">
-<div class="row vh-100-mn">
-  <div class="col-12 d-md-none d-block">
-    <a href="/" class="my-3 nolinkmn d-block">
-    <span class="icomn-arrow-left text-primary fontIconarrow"></span>
-  </a>
-  </div>
+<div class="row vh-100-mn mt-5">
+
   <div class="col-md-6 d-flex align-self-center">
     <div class="wmn-50 mx-auto text-center">
       <div class="box-mvl py-5 p-md-0">
-    <img src="./assets/logo.svg" class="img-formInt mx-auto my-5 m-md-0">
+    <img src="./assets/logo.svg" class="img-formInt mx-auto">
   </div>
-    <form class="fMn mt-3 mt-lg-5" >
-    <div class="mb-4 text-start">
-      <label class="form-label text-start">Número de teléfono</label>
-      <input type="email" class="form-control border-primary" placeholder="Escribe tu número de teléfono">
-    </div>
-    <div class="mb-4 text-start">
-      <label class="form-label text-start">Contraseña</label>
-      <input type="email" class="form-control border-primary" placeholder="Escribe tu contraseña">
-    </div>
-    <div class="mt-4">
-      <br>
-    <a href="/" class="text-dark mt-2">¿Olvidaste tu contraseña?</a>
-  </div>
-    <div class="mt-2 d-grid gap-2">
-      <button class="btn btn-primary" type="button">Iniciar Sesión</button>
+  <h2 class="text-primary text-start"><span>Crea tu contraseña</span></h2>
+    <form class="fMn mt-3 mt-lg-5">
+      <div class="text-start mb-3 position-relative">
+        <label class="form-label text-start">Escribe tu contraseña</label>
+        <input type="password" id="txtPassword" class="form-control border-primary" name="txtPassword"  placeholder="Escribe tu contraseña"/>
+        <button type="button" id="btnToggle" class="ojo">
+          <span id="eyeIcon" class="icomn-view"></span>
+        </button>
+        <p class="small w-90 p-1">Utiliza ocho caracteres como mínimo con una combinación de letras, números y símbolos</p>
+      </div>
+      <div class="text-start mb-3 position-relative">
+        <label class="form-label text-start">Confirma tu contraseña</label>
+        <input type="password" id="txtPassword" class="form-control border-primary" name="txtPassword" placeholder="Escribe tu contraseña"/>
+        <button type="button" id="" class="ojo">
+          <span id="" class="icomn-view"></span>
+        </button>
+      </div>
+      <div class="mb-4 text-start">
+        <label class="form-label text-start">Código de confirmación</label>
+        <input type="email" class="form-control border-primary" placeholder="Escribe el código enviado a tu correo">
+      </div>
+
+    <div class="mt-5 d-grid gap-2">
+      <button class="btn btn-primary" type="button">Guardar contraseña</button>
     </div>
   </form>
+
   </div>
   </div>
   <div class="col-md-6 d-flex align-items-center p-2 pe-lg-4 d-none d-md-block">

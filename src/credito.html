@@ -18,14 +18,20 @@
           <a class="navbar-brand" href="#"><img src="./assets/logo-white.svg" class="img-fluid"></a>
         </div>
         <ul class="alto-boxInt p-0 m-0 d-flex flex-column bd-highlight mb-3 justify-content-sm-center" >
-          <li class="nav-item mnItem-int my-3 ">
-            <span class="icomn-home ps-5 pe-3 "></span> Inicio
-          </li>
           <li class="nav-item mnItem-int my-3 active">
-            <span class="icomn-folder ps-5 pe-3"></span> Creditos
+            <a href="inicio.html" class="nolinkmn">
+            <span class="icomn-home ps-5 pe-3 "></span> Inicio
+          </a>
           </li>
           <li class="nav-item mnItem-int my-3">
+            <a href="credito.html" class="nolinkmn">
+            <span class="icomn-folder ps-5 pe-3"></span> Creditos
+          </a>
+          </li>
+          <li class="nav-item mnItem-int my-3">
+            <a href="perfil.html" class="nolinkmn">
             <span class="icomn-user ps-5 pe-3"></span> Perfil
+            </a>
           </li>
         </ul>
         <div class="alto-boxInt position-relative">
@@ -49,13 +55,13 @@
           <div class="collapse navbar-collapse" id="navbarsExample03">
             <ul class="navbar-nav mx-auto mb-2 mb-sm-0 menuprinc" >
               <li class="nav-item mnItem active">
-                <a class="nav-link px-3" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link px-3" aria-current="page" href="inicio.html">Inicio</a>
               </li>
               <li class="nav-item mnItem">
-                <a class="nav-link px-3" href="#">Creditos</a>
+                <a class="nav-link px-3" href="credito.html">Creditos</a>
               </li>
               <li class="nav-item mnItem">
-                <a class="nav-link px-3" href="#">Perfil</a>
+                <a class="nav-link px-3" href="perfil.html">Perfil</a>
               </li>
             </ul>
           </div>
@@ -133,7 +139,7 @@
           </div>
           <div class="col-md-6 ps-md-4 order-md-4 order-4">
             <div  class="d-none d-md-block">
-            <div class="mn-bRadius-3 mn-gradient-grey h-100 p-md-5 p-3">
+            <div class="mn-bRadius-3 mn-gradient-grey h-100 p-md-5 py-md-4 p-3">
               <div class="row justify-content-md-center">
                 <div class="col-md-8 col-7">
                   <div class="box-icon box-amarillo mx-auto mn-bRadius-2 d-inline-block me-2">
@@ -149,7 +155,7 @@
                     <a href="/" class="btn btn-danger btn-sm px-4  text-white">Vencida</a>
                   </div>
                 </div>
-                <div class="col-6 my-3 pt-3 pb-2 px-4">
+                <div class="col-6 my-3 pt-3 py-2 px-4">
                   <h2 class="text-primary p-0 m-0"><span>$123.420</span></h2>
                   <p cclass="pInt p-0 m-0">02/05/2022</p>
                 </div>
@@ -158,9 +164,9 @@
                     <p class="lh-1 p-0 m-0">No. 39349493</p>
                   </div>
                 </div>
-                <div class="col-md-9 col-12">
+                <div class="col-md-9 col-12 mt-3">
                   <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button">Pagar</button>
+                    <a href="pagos-pendientes.html" class="btn btn-primary mb-1" type="button">Pagar</a>
                   </div>
                 </div>
               </div>

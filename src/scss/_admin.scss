@@ -7,12 +7,14 @@
 .alto-boxInt{
   min-height: 33.33vh;
 }
-.mnItem-int{
+.mnItem-int a{
   color: #fff;
   padding: 10px;
   
 }
-.mnItem-int.active{
+.mnItem-int.active a{
+  width: 100%;
+  display: block;
   color: #FDDA24;
   border-right: 2px solid #FDDA24;
 }
@@ -214,6 +216,26 @@ input[type="range"] {
 }
 .text-end-mn{
   text-align: right;
+}
+/* admin*/
+.tcargo{
+  background-color: #FFFBE2;
+  border-radius: 4px;
+  padding: 4px 6px;
+  margin-left: 4px;
+  display: inline;
+  line-height: 1;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.dasb-grey1{
+  background: rgba(128, 163, 212, 0.3);
+}
+.dasb-grey2{
+  background: #EDECEC;
+}
+.dasb-grey3{
+  background: #F8F8F8;
 }
 @media (max-width: 720px) {
   .margenMbile{

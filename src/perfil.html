@@ -18,14 +18,20 @@
           <a class="navbar-brand" href="#"><img src="./assets/logo-white.svg" class="img-fluid"></a>
         </div>
         <ul class="alto-boxInt p-0 m-0 d-flex flex-column bd-highlight mb-3 justify-content-sm-center" >
-          <li class="nav-item mnItem-int my-3 ">
+          <li class="nav-item mnItem-int my-3 active">
+            <a href="inicio.html" class="nolinkmn">
             <span class="icomn-home ps-5 pe-3 "></span> Inicio
+          </a>
           </li>
           <li class="nav-item mnItem-int my-3">
+            <a href="credito.html" class="nolinkmn">
             <span class="icomn-folder ps-5 pe-3"></span> Creditos
+          </a>
           </li>
-          <li class="nav-item mnItem-int my-3 active">
+          <li class="nav-item mnItem-int my-3">
+            <a href="perfil.html" class="nolinkmn">
             <span class="icomn-user ps-5 pe-3"></span> Perfil
+            </a>
           </li>
         </ul>
         <div class="alto-boxInt position-relative">
@@ -49,13 +55,13 @@
           <div class="collapse navbar-collapse" id="navbarsExample03">
             <ul class="navbar-nav mx-auto mb-2 mb-sm-0 menuprinc" >
               <li class="nav-item mnItem active">
-                <a class="nav-link px-3" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link px-3" aria-current="page" href="inicio.html">Inicio</a>
               </li>
               <li class="nav-item mnItem">
-                <a class="nav-link px-3" href="#">Creditos</a>
+                <a class="nav-link px-3" href="credito.html">Creditos</a>
               </li>
               <li class="nav-item mnItem">
-                <a class="nav-link px-3" href="#">Perfil</a>
+                <a class="nav-link px-3" href="perfil.html">Perfil</a>
               </li>
             </ul>
           </div>
@@ -90,7 +96,7 @@
         
         <div class="row my-5">
           <div class="col-md-6 mb-md-5 mb-3">
-            <a href="\" class="mn-gradient-grey py-3 px-4 px-2 mn-bRadius-3 d-block nolinkmn">
+            <a href="perfil-contra.html" class="mn-gradient-grey py-3 px-4 px-2 mn-bRadius-3 d-block nolinkmn">
               <div class="row align-items-center">
                 <div class="col-md-3 col-2 font80 text-grey-mn text-center" >
                   <span class="icomn-lock"></span>
@@ -106,7 +112,7 @@
             </a>
           </div>
           <div class="col-md-6 mb-md-5 mb-3">
-            <a href="\" class="mn-gradient-grey py-3 px-4 mn-bRadius-3 d-block nolinkmn">
+            <a href="perfil-datosP.html" class="mn-gradient-grey py-3 px-4 mn-bRadius-3 d-block nolinkmn">
               <div class="row align-items-center">
                 <div class="ccol-md-3 col-2 font80 text-grey-mn text-center" >
                   <span class="icomn-binder"></span>
@@ -122,7 +128,7 @@
             </a>
           </div>
           <div class="col-md-6 mb-md-5 mb-3">
-            <a href="\" class="mn-gradient-grey py-3 px-4 mn-bRadius-3 d-block nolinkmn">
+            <a href="perfil-contra.html" class="mn-gradient-grey py-3 px-4 mn-bRadius-3 d-block nolinkmn">
               <div class="row align-items-center">
                 <div class="col-md-3 col-2 font80 text-grey-mn text-center">
                   <span class="icomn-bank"></span>
@@ -138,7 +144,7 @@
             </a>
           </div>
           <div class="col-md-6 mb-md-5 mb-3">
-            <a href="\" class="mn-gradient-grey py-3 px-4 mn-bRadius-3 d-block nolinkmn">
+            <a href="\" class="mn-gradient-grey py-3 px-4 mn-bRadius-3 d-block nolinkmn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div class="row align-items-center">
                 <div class="col-md-3 col-2 font80 text-grey-mn text-center">
                   <span class="icomn-trash-2"></span>
@@ -166,3 +172,17 @@
   <script src="./assets/demo.js"></script>
 </body>
 </html>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content px-3  py-4 ">
+      <h3 class="text-primary my-3"><span>Eliminar cuenta</span></h3>
+      <p class="text-justify pInt small">Estas a punto de eliminar tu cuenta en mundo negocios. ¿Estás seguro de realizar esta acción?</p>
+      <div class="d-grid gap-2">
+        <button class="btn btn-outline-primary" type="button">Volver</button>
+        <button class="btn btn-danger text-white" type="button">Eliminar</button>
+        <!--<button class="btn btn-primary" type="button">Establecer</button>-->
+      </div>
+    </div>
+  </div>
+</div>

@@ -12,30 +12,29 @@
 <div class="container-fluid m-0 p-0">
   <div class="row m-0 p-0">
     <div class="d-none d-md-block col-2 col-md-3 col-lg-2 p-0" >
-        <div class="me-auto mb-2 mb-sm-0 bg-primary vh-100 mn-bRadius-1-end wmn-75">
-          <div class="alto-boxInt text-center">
-            <div class="mnEspace-3"></div>
-            <a class="navbar-brand" href="#"><img src="./assets/logo-white.svg" class="img-fluid"></a>
-          </div>
+      <div class="me-auto mb-2 mb-sm-0 bg-primary vh-100 mn-bRadius-1-end wmn-75">
+        <div class="alto-boxInt text-center">
+          <div class="mnEspace-3"></div>
+          <a class="navbar-brand" href="#"><img src="./assets/logo-white.svg" class="img-fluid"></a>
+        </div>
         <ul class="alto-boxInt p-0 m-0 d-flex flex-column bd-highlight mb-3 justify-content-sm-center" >
-          <li class="nav-item mnItem-int my-3 active">
+          <li class="nav-item mnItem-int my-3 ">
             <span class="icomn-home ps-5 pe-3 "></span> Inicio
           </li>
-          <li class="nav-item mnItem-int my-3">
+          <li class="nav-item mnItem-int my-3 active">
             <span class="icomn-folder ps-5 pe-3"></span> Creditos
           </li>
           <li class="nav-item mnItem-int my-3">
             <span class="icomn-user ps-5 pe-3"></span> Perfil
           </li>
         </ul>
-        
-      <div class="alto-boxInt position-relative">
-        <div class="icon-foot-int text-center">
-          <p class="text-white pb-0">Encuéntranos en</p>
-          <span class="icomn-face text-white"></span> 
-          <span class="icomn-insta text-white"></span> 
+        <div class="alto-boxInt position-relative">
+          <div class="icon-foot-int text-center">
+            <p class="text-white pb-0">Encuéntranos en</p>
+            <span class="icomn-face text-white"></span> 
+            <span class="icomn-insta text-white"></span> 
+          </div>
         </div>
-      </div>
       </div>
     </div>
     <div class="col-lg-10 col-md-9 m-0 p-0">
@@ -67,8 +66,8 @@
           <div class="col">
             <div class="d-md-block">
               <a href="/" class="my-3 nolinkmn d-block">
-              <span class="icomn-arrow-left text-primary fontIconarrow"></span>
-            </a>
+                <span class="icomn-arrow-left text-primary fontIconarrow"></span>
+              </a>
             </div>
           </div>
           <div class="col">
@@ -80,179 +79,227 @@
           </div>
         </div>
         
-        <div class="tittle">
-        <h2 class="text-primary mt-3 mb-0 mobile-text-center"><span>Créditos</span></h2>
-      </div>
-      <div class="box-middle d-flex align-items-center mn-gradient-yellow py-3 px-4" >
-        <div class="me-3">
-          <span class="icomn-clock text-white"></span>
+        <div class="row">
+          <div class="col-md-5 d-flex align-items-center">
+            <div class="tittle pt-1 lh-1 mobile-text-center" >
+              <h2 class="text-primary mobile-text-center"><span>Créditos</span></h2>
+            </div>
+          </div>
+          
+          <div class="col-md-2 d-flex align-items-center text-center">
+            <div class="d-none d-md-block">
+              <a href="/" class="font30 nolinkmn d-flex align-items-center text-center mx-auto" >
+                <span class="icomn-plus text-primary mx-auto"></span>
+                <span class="text-dark font14 ps-2 mx-auto">Solicita nuevo crédito</span>
+              </a>
+          </div>
         </div>
-        <div class="text-box">
-          <h2 class="text-dark p-0 m-0 mobile-text-center">
-            EN ESTUDIO
-          </h2>
-          <p class="p-0 m-0 small">Solicitud No. 3939293</p>
         </div>
-      </div>
-      <!-- Formulario Grande Responsive-->
-      <div class="mn-bRadius-3 p-5 mn-gradient-grey">
-        <form class="mt-3 mx-1 fMn">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="mb-3">
-                <label for="" class="form-label">Monto</label>
-                <input type="text" class="form-control border-0 rounded-2 plac-blue" placeholder="$100.000">
+        <div class="row my-md-5 my-2">
+          <div class="col-md-6  order-md-1">
+            <h3 class="text-primary d-none d-md-block"><span>Créditos</span></h3>
+          </div>
+          <div class="col-md-6 ps-md-4 order-md-2 order-3">
+            <div  class="d-none d-md-block">
+            <h3 class="text-primary d-inline-block"><span>Pagos pendientes</span></h3>
+            <span class="float-end me-2">
+              <a href="/" class="d-inline-block text-grey-mn ">Ver todos</a>
+            </span>
+          </div>
+          </div>
+          <div class="col-md-6 pe-md-4 order-md-2 order-2  position-responsive">
+            <div class="mn-bRadius-2 mn-gradient-grey">
+              <div class="p-md-5 p-3">
+                <form class="fMn">
+                  <div class="mb-3">
+                    <div class="row">
+                      <div class="col-6">
+                        <label for="" class="form-label">$100.000</label>
+                      </div>
+                      <div class="col-6 text-end">
+                        <label for="" class="form-label">$1.500.000</label>
+                      </div>
+                    </div>
+                    <input type="range" class="w-100" value="100000" min="0" max="1000000" id="range" oninput="rangenumber.value=value"/>
+                    <input type="number" class="input-range-valor sinfondo" id="rangenumber" min="0" max="1000000" value="100000" oninput="range.value=value">
+                  </div>
+                </form>
               </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="mb-3">
-                <label for="" class="form-label">Diferido a </label>
-                <input type="text" class="form-control border-0 rounded-2" placeholder="10 días">
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="mb-3">
-                <label for="" class="form-label">Valor a pagar mensual</label>
-                <input type="text" class="form-control border-0 rounded-2 " placeholder="$123.200">
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="mb-3">
-                <label for="" class="form-label">Diferido a </label>
-                <input type="text" class="form-control border-0 rounded-2 " placeholder="10 días" >
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="mb-3">
-                <label for="" class="form-label">Fecha máxima de respuesta</label>
-                <input type="date" class="form-control border-0 rounded-2 " >
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="mb-3">
-                <label for="" class="form-label">Valor a pagar mensual</label>
-                <input type="text" class="form-control border-0 rounded-2" placeholder="$123.200">
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="mb-3">
-                <label for="" class="form-label">Diferido a </label>
-                <input type="text" class="form-control border-0 rounded-2 " placeholder="10 días" >
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="mb-3">
-                <label for="" class="form-label">Fecha máxima de respuesta</label>
-                <input type="date" class="form-control border-0 rounded-2 " >
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="mb-3">
-                <label for="" class="form-label">Valor a pagar mensual</label>
-                <input type="text" class="form-control border-0 rounded-2" placeholder="$123.200">
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control border-0 rounded-2"  rows="3"></textarea>
+              <div class="bg-primary mn-bRadius-2-bottom p-3 m-0 ">
+                <h3 class="text-center text-white">Tu crédito actual es de</h3>
+                <h2 class="text-center text-yellow"> $500.000 COP</h2>
               </div>
             </div>
           </div>
-        </form>
-      </div>
-    <!-- Formulario Grande Responsive-->
-
-    <!-- Aprobado-->
-      <div class="box-middle d-flex align-items-center mn-bg-blue py-3 px-4">
-        <div class="me-3">
-          <span class="icomn-check text-white"></span>
-        </div>
-        <div class="text-box">
-          <h2 class="text-dark p-0 m-0 mobile-text-center">
-            APROBADO
-          </h2>
-          <p class="p-0 m-0 small">Solicitud No. 3939293</p>
-        </div>
-      </div>
-            <!-- Formulario Grande Responsive-->
-            <div class="mn-bRadius-3 p-5 mn-gradient-grey">
-              <form class="mt-3 mx-1 fMn">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="mb-3">
-                      <label for="" class="form-label">Monto</label>
-                      <input type="text" class="form-control border-0 rounded-2 plac-blue" placeholder="$100.000">
-                    </div>
+          <div class="col-md-6 ps-md-4 order-md-4 order-4">
+            <div  class="d-none d-md-block">
+            <div class="mn-bRadius-3 mn-gradient-grey h-100 p-md-5 p-3">
+              <div class="row justify-content-md-center">
+                <div class="col-md-8 col-7">
+                  <div class="box-icon box-amarillo mx-auto mn-bRadius-2 d-inline-block me-2">
+                    <span class="icomn-clock text-white"></span>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="mb-3">
-                      <label for="" class="form-label">Diferido a </label>
-                      <input type="text" class="form-control border-0 rounded-2" placeholder="10 días">
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="mb-3">
-                      <label for="" class="form-label">Valor a pagar mensual</label>
-                      <input type="text" class="form-control border-0 rounded-2 " placeholder="$123.200">
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="mb-3">
-                      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                      <textarea class="form-control border-0 rounded-2"  rows="3"></textarea>
-                    </div>
+                  <div class="d-inline-block">
+                    <p class="pInt p-0 m-0 ">Cuota <span>No. 1</span></p>
+                    <p class="pInt p-0 m-0"><span>$100.000</span></p>
                   </div>
                 </div>
-              </form>
-            </div>
-          <!-- Formulario Grande Responsive-->
-
-            <!-- rechazado-->
-      <div class="box-middle d-flex align-items-center mn-bg-red py-3 px-4">
-        <div class="me-3">
-          <span class="icomn-check text-white"></span>
-        </div>
-        <div class="text-box">
-          <h2 class="p-0 m-0 mobile-text-center">
-            RECHAZADO
-          </h2>
-          <p class="p-0 m-0 small">Solicitud No. 3939293</p>
-        </div>
-      </div>
-            <!-- Formulario Grande Responsive-->
-            <div class="mn-bRadius-3 p-5 mn-gradient-grey">
-              <form class="mt-3 mx-1 fMn">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="mb-3">
-                      <label for="" class="form-label">Monto</label>
-                      <input type="text" class="form-control border-0 rounded-2 plac-blue" placeholder="$100.000">
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="mb-3">
-                      <label for="" class="form-label">Diferido a </label>
-                      <input type="text" class="form-control border-0 rounded-2" placeholder="10 días">
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="mb-3">
-                      <label for="" class="form-label">Valor a pagar mensual</label>
-                      <input type="text" class="form-control border-0 rounded-2 " placeholder="$123.200">
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="mb-3">
-                      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                      <textarea class="form-control border-0 rounded-2"  rows="3"></textarea>
-                    </div>
+                <div class="col-md-4 col-5 d-flex align-items-center">
+                  <div class="text-center ms-auto" >
+                    <a href="/" class="btn btn-danger btn-sm px-4  text-white">Vencida</a>
                   </div>
                 </div>
-              </form>
+                <div class="col-6 my-3 pt-3 pb-2 px-4">
+                  <h2 class="text-primary p-0 m-0"><span>$123.420</span></h2>
+                  <p cclass="pInt p-0 m-0">02/05/2022</p>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                  <div class="text-center ms-auto" >
+                    <p class="lh-1 p-0 m-0">No. 39349493</p>
+                  </div>
+                </div>
+                <div class="col-md-9 col-12">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">Pagar</button>
+                  </div>
+                </div>
+              </div>
             </div>
-          <!-- Formulario Grande Responsive-->
-    </div>
+          </div>
+          </div>
+        </div>
+        <div class="mt-md-3 mt-5">
+          <div class="ps-md-4 order-md-2 order-3">
+            <h3 class="text-primary d-inline-block"><span>Historial créditos</span></h3>
+            <span class="float-end me-2">
+              <a href="/" class="d-inline-block text-grey-mn ">Ver todos</a>
+            </span>
+          </div>
+          
+          <div class="mn-bRadius-2 mn-gradient-grey">
+            <div class="p-md-5 p-3">
+              <div class="row justify-content-md-center">
+                <div class="col-md-8 col-7">
+                  <div class="box-icon box-amarillo mx-auto mn-bRadius-2 d-inline-block me-2">
+                    <span class="icomn-clock text-white"></span>
+                  </div>
+                  <div class="d-inline-block">
+                    <p class="pInt p-0 m-0 ">Cuota <span>No. 1</span></p>
+                    <p class="pInt p-0 m-0"><span>$100.000</span></p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-5 d-flex align-items-center">
+                  <div class="text-center ms-auto">
+                  </div>
+                <div class="p-0">
+                  <h2 class="text-primary p-0 m-0"><span>$123.420</span></h2>
+                  <p class="pInt p-0 m-0 lh-1">02/05/2022</p>
+                </div>
+                <span class="icomn-arrow-right px-3 font14 text-primary"></span>
+              </div>
+                <div class="linebooton w-100 my-4 mx-auto"></div>
+              </div>
+              <div class="row justify-content-md-center">
+                <div class="col-md-8 col-7">
+                  <div class="mn-bg-blue box-icon mx-auto mn-bRadius-2 d-inline-block me-2">
+                    <span class="icomn-check text-white"></span>
+                  </div>
+                  <div class="d-inline-block">
+                    <p class="pInt p-0 m-0 ">Cuota <span>No. 1</span></p>
+                    <p class="pInt p-0 m-0"><span>$100.000</span></p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-5 d-flex align-items-center">
+                    <div class="text-center ms-auto">
+                    </div>
+                  <div class="p-0">
+                    <h2 class="text-primary p-0 m-0"><span>$123.420</span></h2>
+                    <p class="pInt p-0 m-0 lh-1">02/05/2022</p>
+                  </div>
+                  <span class="icomn-arrow-right px-3 font14 text-primary"></span>
+                </div>
+                <div class="linebooton w-100 my-4 mx-auto"></div>
+              </div>
+              <div class="row justify-content-md-center">
+                <div class="col-md-8 col-7">
+                  <div class="mn-bg-blue box-icon mx-auto mn-bRadius-2 d-inline-block me-2">
+                    <span class="icomn-check text-white"></span>
+                  </div>
+                  <div class="d-inline-block">
+                    <p class="pInt p-0 m-0 ">Cuota <span>No. 1</span></p>
+                    <p class="pInt p-0 m-0"><span>$100.000</span></p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-5 d-flex align-items-center">
+                    <div class="text-center ms-auto">
+                    </div>
+                  <div class="p-0">
+                    <h2 class="text-primary p-0 m-0"><span>$123.420</span></h2>
+                    <p class="pInt p-0 m-0 lh-1">02/05/2022</p>
+                  </div>
+                  <span class="icomn-arrow-right px-3 font14 text-primary"></span>
+                </div>
+                <div class="linebooton w-100 my-4 mx-auto"></div>
+              </div>
+            </div>
+            <div class="text-center pb-3 d-block">
+              <div class="d-block d-md-none">
+                <a href="/" class="font30 nolinkmn d-block ">
+                  <span class="icomn-plus text-primary m-0 p-0 d-block"></span>
+                  <span class="text-dark font14 p-0 m-0">Solicita nuevo crédito</span>
+                </a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+        <div class="col-md-6 ps-md-4 order-md-2 order-3">
+          <div  class="d-block d-md-none">
+          <h3 class="text-primary d-inline-block"><span>Pagos pendientes</span></h3>
+          <span class="float-end me-2">
+            <a href="/" class="d-inline-block text-grey-mn ">Ver todos</a>
+          </span>
+        </div>
+        </div>
+        <div class="col-md-6 ps-md-4 order-md-4 order-4">
+          <div  class="d-block d-md-none">
+          <div class="mn-bRadius-3 mn-gradient-grey h-100 p-md-5 p-3">
+            <div class="row justify-content-md-center">
+              <div class="col-md-8 col-7">
+                <div class="box-icon box-amarillo mx-auto mn-bRadius-2 d-inline-block me-2">
+                  <span class="icomn-clock text-white"></span>
+                </div>
+                <div class="d-inline-block">
+                  <p class="pInt p-0 m-0 ">Cuota <span>No. 1</span></p>
+                  <p class="pInt p-0 m-0"><span>$100.000</span></p>
+                </div>
+              </div>
+              <div class="col-md-4 col-5 d-flex align-items-center">
+                <div class="text-center ms-auto" >
+                  <a href="/" class="btn btn-danger btn-sm px-4  text-white">Vencida</a>
+                </div>
+              </div>
+              <div class="col-6 my-3 pt-3 pb-2 px-4">
+                <h2 class="text-primary p-0 m-0"><span>$123.420</span></h2>
+                <p cclass="pInt p-0 m-0">02/05/2022</p>
+              </div>
+              <div class="col-6 d-flex align-items-center">
+                <div class="text-center ms-auto" >
+                  <p class="lh-1 p-0 m-0">No. 39349493</p>
+                </div>
+              </div>
+              <div class="col-md-9 col-12">
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" type="button">Pagar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      </div><!--FIN container-fluid-->
     </div>
   </div>
 

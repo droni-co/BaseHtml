@@ -79,4 +79,6 @@ function checkInput() {
 toggle.addEventListener('click', togglePassword, false);
 passwordInput.addEventListener('keyup', checkInput, false);
 
+
+
 });

@@ -2,6 +2,7 @@
 $body-bg: #F5F5F5;
 $primary: #0046A8;
 $secondary:#FDDA24;
+$danger:#FF0016;
 $aspect-ratios: (
   "1x1": 100%,
   "4x2": calc(2.5/ 4 * 100%),
@@ -28,6 +29,9 @@ $input-btn-font-family: 'Poppins', sans-serif;
 @import '_admin.scss';
 @import '_mobil.scss';
 //general 
+.container-fluid{
+  padding-right: 2% !important;
+}
 body{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -59,6 +63,7 @@ line-height: 20px;
 }
 .mntext-center{
   text-align: center;
+  
 }
 .mntext-end{
 text-align: right;
@@ -110,6 +115,14 @@ hr.hramarillo {
 }
 .mn-bRadius-3{
   border-radius: 20px;
+}
+.mn-bRadius-2-bottom{
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.mn-bRadius-2-top{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 .mn-bRadius-4-end{
   border-top-right-radius:30px;
@@ -724,6 +737,7 @@ input[type=search]{
     }
     .mobile-text-center{
       text-align: center;
+      margin: auto;
     }
     .menosTop{
       margin-top: -35px;

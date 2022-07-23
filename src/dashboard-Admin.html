@@ -17,18 +17,23 @@
             <div class="mnEspace-3"></div>
             <a class="navbar-brand" href="#"><img src="./assets/logo-white.svg" class="img-fluid"></a>
           </div>
-        <ul class="alto-boxInt p-0 m-0 d-flex flex-column bd-highlight mb-3 justify-content-sm-center" >
-          <li class="nav-item mnItem-int my-3 active">
-            <span class="icomn-home ps-5 pe-3 "></span> Dashboard
-          </li>
-          <li class="nav-item mnItem-int my-3">
-            <span class="icomn-folder ps-5 pe-3"></span> Creditos
-          </li>
-          <li class="nav-item mnItem-int my-3">
-            <span class="icomn-user ps-5 pe-3"></span> Control
-          </li>
-        </ul>
-        
+          <ul class="alto-boxInt p-0 m-0 d-flex flex-column bd-highlight mb-3 justify-content-sm-center" >
+            <li class="nav-item mnItem-int my-3 active">
+              <a href="dashboard-Admin.html" class="nolinkmn">
+              <span class="icomn-home ps-5 pe-3 "></span> Dashboard
+            </a>
+            </li>
+            <li class="nav-item mnItem-int my-3">
+              <a href="creditos-admin.html" class="nolinkmn">
+              <span class="icomn-folder ps-5 pe-3"></span> Creditos
+            </a>
+            </li>
+            <li class="nav-item mnItem-int my-3">
+              <a href="control-admin" class="nolinkmn">
+              <span class="icomn-user ps-5 pe-3"></span> Control
+              </a>
+            </li>
+          </ul>
       <div class="alto-boxInt position-relative">
         <div class="icon-foot-int text-center">
           <p class="text-white pb-0">Encuéntranos en</p>
@@ -50,13 +55,13 @@
           <div class="collapse navbar-collapse" id="navbarsExample03">
             <ul class="navbar-nav mx-auto mb-2 mb-sm-0 menuprinc" >
               <li class="nav-item mnItem active">
-                <a class="nav-link px-3" aria-current="page" href="#">Dashboard</a>
+                <a class="nav-link px-3" aria-current="page" href="dashboard-Admin.html">Dashboard</a>
               </li>
               <li class="nav-item mnItem">
-                <a class="nav-link px-3" href="#">Creditos</a>
+                <a class="nav-link px-3" href="creditos-admin.html">Creditos</a>
               </li>
               <li class="nav-item mnItem">
-                <a class="nav-link px-3" href="#">Control</a>
+                <a class="nav-link px-3" href="control-admin">Control</a>
               </li>
             </ul>
           </div>
@@ -78,7 +83,7 @@
 
       <div class="row">
         <div class="col-md-4 text-center">
-          <div class="d-flex align-items-center mn-bRadius-3 dasb-grey1 py-3 w-mn-75">
+          <div class="d-flex align-items-center mn-bRadius-2 dasb-grey1 py-3 w-mn-75 mb-3">
             <div class="inline-block mx-auto">
               <div class="box-icon box-amarillo  mn-bRadius-2 d-inline-block me-2">
                 <span class="icomn-clock text-white"></span>
@@ -91,7 +96,7 @@
           </div>
         </div>
         <div class="col-md-4 text-center">
-          <div class="d-flex align-items-center mn-bRadius-3 dasb-grey1 py-3 w-mn-75">
+          <div class="d-flex align-items-center mn-bRadius-2 dasb-grey2 py-3 w-mn-75 mb-3">
             <div class="inline-block mx-auto">
               <div class="box-icon box-amarillo  mn-bRadius-2 d-inline-block me-2">
                 <span class="icomn-clock text-white"></span>
@@ -104,7 +109,7 @@
           </div>
         </div>
         <div class="col-md-4 text-center">
-          <div class="d-flex align-items-center mn-bRadius-3 dasb-grey1 py-3 w-mn-75">
+          <div class="d-flex align-items-center mn-bRadius-2 dasb-grey3 py-3 w-mn-75 mb-3">
             <div class="inline-block mx-auto">
               <div class="box-icon box-amarillo  mn-bRadius-2 d-inline-block me-2">
                 <span class="icomn-clock text-white"></span>
@@ -118,6 +123,59 @@
         </div>
       </div>
       <div class="linebooton w-100 my-4 mx-auto"></div>
+      
+        <ul class="nav" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link linkadmin active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Actividad reciente</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link linkadmin" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+          </li>
+        </ul>
+        <div class="mn-bRadius-2 mn-gradient-grey p-md-5 p-3 my-3">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="table-responsive">
+              <table class="table tadmin">
+                <thead>
+                  <tr>
+                    <th scope="col">ID Solicitud</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Fecha de solicitud</th>
+                    <th scope="col">Cantidad solicitada</th>
+                    <th scope="col">Banco</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">448939394</th>
+                    <td>Germán Torres</td>
+                    <td></td>
+                    <td>10 / 10 / 22 a las 22:00 horas </td>
+                    <td>$1.000.000</td>
+                    <td>Bancolombia </td>
+                    <td><span class=" icomn-view"></span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        </div>
+        </div>
     </div><!-- fin container int-->
   </div>
   </div>

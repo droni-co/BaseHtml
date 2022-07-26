@@ -7,25 +7,28 @@
 .alto-boxInt{
   min-height: 33.33vh;
 }
-.mnItem-int a{
+.mnItem-int a {
   color: #fff;
-  padding: 10px;
-  
+  padding: 10px 0px;
+  border:1px solid transparent;
+  width: 100%;
+  display: block;
 }
-.mnItem-int.active a{
+
+.mnItem-int.active a, .mnItem-int a:hover {
+  padding: 10px 0px;
   width: 100%;
   display: block;
   color: #FDDA24;
   border-right: 2px solid #FDDA24;
+  margin: 0;
 }
 .icon-foot-int {
   position: absolute;
   bottom: 20%;
-  position: absolute;
-
-left: 0;
-right: 0;
-margin: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .icon-foot-int span{
   font-size: 50px;
@@ -245,9 +248,67 @@ input[type="range"] {
   font-weight: 600;
   border-bottom:2px solid #FDDA24;
 }
-.tadmin th{
-  border: 0;
+.tadmin tr th{
+  color: #0046A8;
+  border-bottom: 2px solid transparent;
+  text-align: center;
 }
+.tadmin tr td {
+  border-bottom: 1px solid #818181;
+  text-align: center;
+  color:#222222;
+}
+.linkojo {
+  text-decoration: none;
+}
+.linkojo .icomn-view-not{
+  display: none;
+}
+.linkojo:hover .icomn-view-not{
+  display: block;
+  text-decoration: none !important;
+}
+.linkojo:hover .icomn-view{
+  display: none;
+}
+/* botones estado admin */
+.btntable{
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  width: 100%;
+}
+.btntable:hover{
+  color: #fff;
+}
+.aprobado{
+  background-color: #80A3D4;
+}
+.espera{
+  background-color: #B25E66
+}
+.preaprobado{
+  background: #FF912C;
+}
+.rechazado{
+  background-color: #FF0016;
+}
+.admin{
+  background-color:#FFF7CF
+}
+.aprobador{
+  background-color:#B274E2;
+}
+.comercial{
+  background-color:#D09675;
+}
+.desembolso{
+  background-color:#59B6A4;
+}
+.bg-transp{
+  background-color: transparent;
+}
+
 @media (max-width: 720px) {
   .margenMbile{
     margin-top: 80px;
